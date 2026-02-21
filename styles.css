@@ -1,3 +1,109 @@
-h1 {
-    color: red;
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("fonts/myfont.woff") format("woff"),
+       url("fonts\Norse-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main-content {
+    display: flex;
+    height: 100%;
+}
+
+.main-hero{
+    flex: 1.6;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.hero-logo p, img {
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+}
+
+.main-Signup{
+    flex: 2;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    margin: 2rem 2rem 0 2rem;
+    font-size: 1.4rem;
+}
+
+.intro-subtext {
+    margin: 2rem 2rem 2rem 2rem;
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+input   {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+
+button {
+    width: 150px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
