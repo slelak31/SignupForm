@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Norse-Bold";
   src: url("fonts/myfont.woff") format("woff"),
-       url("fonts\Norse-Bold.otf") format("truetype");
+       url("fonts/Norse-Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,12 +10,8 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
+  font: inherit;
   font-size: 100%;
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 * {
@@ -30,7 +26,7 @@ html, body {
 
 .main-content {
     display: flex;
-    height: 100%;
+    height: 100vh;
 }
 
 .main-hero{
@@ -39,6 +35,16 @@ html, body {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-logo {
@@ -51,10 +57,14 @@ html, body {
     margin-top: 45px;
 }
 
-.hero-logo p, img {
-    flex-direction: column;
+.hero-logo p{
     color: white;
-    font-size: 40px;
+    font-size: 3rem;
+    text-shadow: 1px 1px black;
+}
+
+.hero-logo img {
+    width: 100%;
 }
 
 .main-Signup{
@@ -77,18 +87,35 @@ html, body {
     align-self: flex-start;
 }
 
-form {
+.form-card {
+    /* padding: 50px; */
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: stretch;
+    padding: 20px 300px 50px 50px;
+    /* box-shadow: 5px black; ADD BOX SHADOW*/ 
 }
 
+.form-card h2{
+    margin-bottom: 25px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+}
+
+.form-group {
+    flex: 0 0 calc(50% - 20px);
+}
 
 label {
     display: block;
-    font-size: 12px;
+    font-size: .75rem;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 input   {
@@ -102,8 +129,4 @@ button {
     width: 150px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
 
