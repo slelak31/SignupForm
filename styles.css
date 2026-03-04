@@ -79,32 +79,35 @@ html, body {
 .intro-text {
     margin: 2rem 2rem 0 2rem;
     font-size: 1.4rem;
+    align-self: flex-start;
 }
 
 .intro-subtext {
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 4rem 2rem;
     font-size: 1.4rem;
     align-self: flex-start;
 }
 
 .form-card {
     /* padding: 50px; */
+    font-family: "Roboto", sans-serif;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-self: stretch;
     padding: 20px 300px 50px 50px;
-    /* box-shadow: 5px black; ADD BOX SHADOW*/ 
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2)
 }
 
 .form-card h2{
     margin-bottom: 25px;
+    font-weight: 475;
 }
 
 .fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 40px;
+    gap: 20px 40px;
 }
 
 .form-group {
@@ -123,10 +126,37 @@ input   {
     height: auto;
     border: 1px solid #cfcfcf;
     border-radius: 6px;
+    padding: 8px 10px;
 }
 
 button {
-    width: 150px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #1475C5;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    align-self: flex-start;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+.main-Signup p {
+    align-self: flex-start;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.login-text a {
+    color: #1475C5;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 
